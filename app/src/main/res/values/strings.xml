@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ViewScrollStudy</string>
+
+    <string name="text_layout">使用 Layout 方法滑动\n（拖动本控件可以随意移动）</string>
+    <string name="text_offset">使用 offsetLeftAndRight 和 offsetTopAndBottom 方法滑动\n（拖动本控件可以随意移动）</string>
+    <string name="text_marginlayoutparams">使用 MarginLayoutParams 方法滑动\n（拖动本控件可以随意移动）</string>
+    <string name="text_scrollby">使用 scrollBy 方法滑动\n（拖动本控件可以随意移动）</string>
+    <string name="text_scrollto">使用 scrollTo 方法滑动\n（拖动本控件可以随意移动）</string>
+    <string name="text_scroller">使用 Scroller 方法滑动\n（拖动本控件可以随意移动）</string>
+    <string name="text_viewdarghelper">使用 ViewDargHelper 方法滑动\n（拖动本控件可以随意移动）</string>
+</resources>

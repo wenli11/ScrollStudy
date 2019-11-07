@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <per.dg.viewscrollstudy.scroll.layout.ScrollLayoutView
+        android:id="@+id/layout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/text_layout"
+        android:gravity="center"
+        android:background="@color/dark"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"/>
+
+    <per.dg.viewscrollstudy.scroll.offset.ScrollOffSetView
+        android:id="@+id/offset"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/text_offset"
+        android:gravity="center"
+        android:background="@color/dark"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        android:layout_marginTop="10dp"/>
+
+    <per.dg.viewscrollstudy.scroll.marginlayoutparams.ScrollMarginLayoutParamsView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/text_offset"
+        android:gravity="center"
+        android:background="@color/dark"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/offset"
+        app:layout_constraintLeft_toRightOf="@+id/offset"
+        android:layout_marginTop="10dp"/>
+
+    <per.dg.viewscrollstudy.scroll.scrollby.ScrollScrollByView
+        android:id="@+id/scrollby"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="@string/text_scrollby"
+        android:gravity="center"
+        android:background="@color/dark"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/offset"
+        android:layout_marginTop="10dp"/>
+
+    <per.dg.viewscrollstudy.scroll.scrollto.ScrollScrollToView
+        android:id="@+id/scrollto"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/text_scrollto"
+        android:gravity="center"
+        android:background="@color/dark"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/scrollby"
+        android:layout_marginTop="10dp"/>
+
+    <per.dg.viewscrollstudy.scroll.scroller.ScrollScrollerView
+        android:id="@+id/scroller"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/text_scroller"
+        android:gravity="center"
+        android:background="@color/dark"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/scrollto"
+        android:layout_marginTop="10dp"/>
+
+    <per.dg.viewscrollstudy.scroll.viewdarghelper.ScrollViewDargHelperView
+        android:id="@+id/viewdarghelper"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:text="@string/text_viewdarghelper"
+        android:gravity="center"
+        android:background="@color/dark"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/scroller"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/text_scroller"
+            android:gravity="center"
+            android:background="@color/dark"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/text_scroller"
+            android:gravity="center"
+            android:background="@color/dark"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"/>
+
+    </per.dg.viewscrollstudy.scroll.viewdarghelper.ScrollViewDargHelperView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
